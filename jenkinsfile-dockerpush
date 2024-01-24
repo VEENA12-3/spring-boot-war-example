@@ -38,7 +38,7 @@ pipeline {
                                 docker build -t sudhakarbastawade/testapp:${VERSION} .
                                 docker login -u sudhakarbastawade -p $docker_password
                                 docker push sudhakarbastawade/testapp:${VERSION}
-                                docker rmi sudhakarbastawade/demo:${VERSION}
+                                docker rmi sudhakarbastawade/testapp:${VERSION}
                             '''
                     }
                 }
